@@ -1,0 +1,60 @@
+config:
+  credentials: []
+  project_repos:
+    bitbucket.org/cessda/cessda.cvs.two:
+      branch: master
+      repo: https://bitbucket.org/cessda/cessda.cvs.two
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.4
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      bitbucket.org/cessda/cessda.cvs.two git:
+        commands:
+        - /usr/bin/env sh .sqa/script.sloppy-ivory-woodlouse.sh
+        container: qc.acc_messy-copper-pig
+  QC.Doc:
+    repos:
+      bitbucket.org/cessda/cessda.cvs.two find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.hazy-corn-balinese.sh
+        container: qc.doc_snippy-yellow-hyena
+      bitbucket.org/cessda/cessda.cvs.two git:
+        commands:
+        - /usr/bin/env sh .sqa/script.nerdy-platinum-ladybird.sh
+        container: qc.doc_droopy-indigo-centipede
+      bitbucket.org/cessda/cessda.cvs.two markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.sleepy-azure-pinscher.sh
+        container: qc.doc_hazy-indigo-markhor
+  QC.Lic:
+    repos:
+      bitbucket.org/cessda/cessda.cvs.two licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.gloppy-tomato-turkey.sh
+        container: qc.lic_surly-asparagus-tapir
+  QC.Sty:
+    repos:
+      bitbucket.org/cessda/cessda.cvs.two checkstyle:
+        commands:
+        - /usr/bin/env sh .sqa/script.tacky-salmon-foxhound.sh
+        container: qc.sty_pasty-lilac-rabbit
+      bitbucket.org/cessda/cessda.cvs.two jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.muzzy-bronze-pig.sh
+        container: qc.sty_nippy-emerald-bracke
+      bitbucket.org/cessda/cessda.cvs.two stylelint:
+        commands:
+        - /usr/bin/env sh .sqa/script.pretty-cream-rottweiler.sh
+        container: qc.sty_sleazy-lime-macaque
+  QC.Ver:
+    repos:
+      bitbucket.org/cessda/cessda.cvs.two get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.jumpy-indigo-paradise.sh
+        container: qc.ver_scaly-purple-clam
+timeout: 1800
