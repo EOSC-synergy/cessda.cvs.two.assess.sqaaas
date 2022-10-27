@@ -15,52 +15,52 @@ sqa_criteria:
     repos:
       bitbucket.org/cessda/cessda.cvs.two git:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-harlequin-fowl.sh
-        container: qc.acc_zippy-beige-termite
+        - /usr/bin/env sh .sqa/script.squeaky-teal-chow.sh
+        container: qc.acc_hasty-seashell-monkey
   QC.Doc:
     repos:
       bitbucket.org/cessda/cessda.cvs.two find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-burgundy-dachshund.sh
-        container: qc.doc_droopy-wisteria-butterfly
+        - /usr/bin/env sh .sqa/script.goopy-rust-hamster.sh
+        container: qc.doc_slaphappy-viridian-opossum
       bitbucket.org/cessda/cessda.cvs.two git:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-bistre-mau.sh
-        container: qc.doc_paltry-chartreuse-rat
+        - /usr/bin/env sh .sqa/script.fuzzy-orange-sparrow.sh
+        container: qc.doc_smelly-ultramarine-crab
       bitbucket.org/cessda/cessda.cvs.two markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-charcoal-guppy.sh
-        container: qc.doc_zippy-asparagus-bulldog
+        - /usr/bin/env sh .sqa/script.queasy-grey-fossa.sh
+        container: qc.doc_lovely-pear-lizard
   QC.Lic:
     repos:
       bitbucket.org/cessda/cessda.cvs.two licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-emerald-wolf.sh
-        container: qc.lic_wimpy-aquamarine-caracal
+        - /usr/bin/env sh .sqa/script.flimsy-ochre-woodlouse.sh
+        container: qc.lic_flabby-ochre-abyssinian
   QC.Met:
     repos:
       bitbucket.org/cessda/cessda.cvs.two cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-amaranth-flamingo.sh
-        container: qc.met_nerdy-alizarin-bison
+        - /usr/bin/env sh .sqa/script.ugly-coral-spitz.sh
+        container: qc.met_goopy-taupe-deer
   QC.Sty:
     repos:
       bitbucket.org/cessda/cessda.cvs.two checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-plum-wombat.sh
-        container: qc.sty_frumpy-violet-bat
+        - /usr/bin/env sh .sqa/script.lousy-rose-shrew.sh
+        container: qc.sty_thirsty-ultramarine-wrasse
       bitbucket.org/cessda/cessda.cvs.two jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-xanthic-albatross.sh
-        container: qc.sty_scanty-coral-jellyfish
+        - /usr/bin/env sh .sqa/script.cozy-razzmatazz-shrew.sh
+        container: qc.sty_goopy-cream-stingray
       bitbucket.org/cessda/cessda.cvs.two stylelint:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-flax-drever.sh
-        container: qc.sty_chummy-cornflower-wombat
+        - /usr/bin/env sh .sqa/script.chummy-ochre-mastiff.sh
+        container: qc.sty_frumpy-gamboge-meerkat
   QC.Ver:
     repos:
       bitbucket.org/cessda/cessda.cvs.two get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-sangria-caiman.sh
-        container: qc.ver_cozy-orange-tzu
+        - /usr/bin/env sh .sqa/script.muggy-vermilion-seal.sh
+        container: qc.ver_wheezy-red-saola
 timeout: 1800
