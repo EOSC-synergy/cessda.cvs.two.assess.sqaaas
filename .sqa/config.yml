@@ -5,7 +5,7 @@ config:
       branch: master
       repo: https://bitbucket.org/cessda/cessda.cvs.two
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.5
+      branch: release/1.7.4
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,46 +15,46 @@ sqa_criteria:
     repos:
       bitbucket.org/cessda/cessda.cvs.two git:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-white-molly.sh
-        container: qc.acc_gloppy-cinnabar-jellyfish
+        - /usr/bin/env sh .sqa/script.paltry-zucchini-serval.sh
+        container: qc.acc_snoopy-champagne-ostrich
   QC.Doc:
     repos:
       bitbucket.org/cessda/cessda.cvs.two find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-heliotrope-zonkey.sh
-        container: qc.doc_muggy-alizarin-uakari
+        - /usr/bin/env sh .sqa/script.lovely-denim-greyhound.sh
+        container: qc.doc_shabby-chestnut-greyhound
       bitbucket.org/cessda/cessda.cvs.two git:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-aqua-booby.sh
-        container: qc.doc_shaky-ruby-chihuahua
+        - /usr/bin/env sh .sqa/script.hasty-rose-mayfly.sh
+        container: qc.doc_hazy-flax-koala
       bitbucket.org/cessda/cessda.cvs.two markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-seashell-gecko.sh
-        container: qc.doc_ready-cinnabar-affenpinscher
+        - /usr/bin/env sh .sqa/script.stealthy-cardinal-hornet.sh
+        container: qc.doc_ugly-silver-avocet
   QC.Lic:
     repos:
       bitbucket.org/cessda/cessda.cvs.two licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-turquoise-insect.sh
-        container: qc.lic_skinny-maroon-hound
+        - /usr/bin/env sh .sqa/script.flaky-violet-tuatara.sh
+        container: qc.lic_flabby-pink-booby
   QC.Sty:
     repos:
       bitbucket.org/cessda/cessda.cvs.two checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-amber-neanderthal.sh
-        container: qc.sty_lumpy-ruby-gecko
+        - /usr/bin/env sh .sqa/script.surly-persimmon-spider.sh
+        container: qc.sty_sleepy-cobalt-badger
       bitbucket.org/cessda/cessda.cvs.two jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-pink-cattle.sh
-        container: qc.sty_foggy-corn-nightingale
+        - /usr/bin/env sh .sqa/script.boozy-chestnut-gharial.sh
+        container: qc.sty_cloudy-periwinkle-chamois
       bitbucket.org/cessda/cessda.cvs.two stylelint:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-burgundy-monkey.sh
-        container: qc.sty_hasty-cardinal-kangaroo
+        - /usr/bin/env sh .sqa/script.lousy-blue-lobster.sh
+        container: qc.sty_pretty-purple-neanderthal
   QC.Ver:
     repos:
       bitbucket.org/cessda/cessda.cvs.two get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-mustard-javanese.sh
-        container: qc.ver_leaky-charcoal-clam
-timeout: 5400
+        - /usr/bin/env sh .sqa/script.messy-beige-crocodile.sh
+        container: qc.ver_jumpy-sepia-oyster
+timeout: 1800
