@@ -1,4 +1,4 @@
 (
 cd bitbucket.org/cessda/cessda.cvs.two &&
-    cffconvert --validate
+    git rev-parse --is-inside-work-tree
 )
