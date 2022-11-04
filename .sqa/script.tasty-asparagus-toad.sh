@@ -1,4 +1,4 @@
 (
 cd bitbucket.org/cessda/cessda.cvs.two &&
-    npx stylelint **/*.vue
+    npx stylelint **/*.{js ts css vue}
 )
