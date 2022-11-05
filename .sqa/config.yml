@@ -15,46 +15,46 @@ sqa_criteria:
     repos:
       bitbucket.org/cessda/cessda.cvs.two git:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-cobalt-wolfhound.sh
-        container: qc.acc_geeky-buff-otter
+        - /usr/bin/env sh .sqa/script.pasty-yellow-sheepdog.sh
+        container: qc.acc_pasty-white-lemming
   QC.Doc:
     repos:
       bitbucket.org/cessda/cessda.cvs.two find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-auburn-terrier.sh
-        container: qc.doc_flimsy-cardinal-bison
+        - /usr/bin/env sh .sqa/script.baggy-russet-jellyfish.sh
+        container: qc.doc_boozy-yellow-loon
       bitbucket.org/cessda/cessda.cvs.two git:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-chocolate-otter.sh
-        container: qc.doc_scaly-ecru-iguana
+        - /usr/bin/env sh .sqa/script.sunny-eggplant-wasp.sh
+        container: qc.doc_tacky-eggplant-mole
       bitbucket.org/cessda/cessda.cvs.two markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-russet-falcon.sh
-        container: qc.doc_wheezy-vermilion-audemer
+        - /usr/bin/env sh .sqa/script.cloudy-razzmatazz-anteater.sh
+        container: qc.doc_wiggy-cerise-beetle
   QC.Lic:
     repos:
       bitbucket.org/cessda/cessda.cvs.two licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-wisteria-owl.sh
-        container: qc.lic_nippy-red-kakapo
+        - /usr/bin/env sh .sqa/script.chummy-scarlet-tarsier.sh
+        container: qc.lic_messy-rust-giraffe
   QC.Sty:
     repos:
       bitbucket.org/cessda/cessda.cvs.two checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-cyan-chihuahua.sh
-        container: qc.sty_gummy-cream-antelope
+        - /usr/bin/env sh .sqa/script.homely-buff-gerbil.sh
+        container: qc.sty_muggy-ivory-fossa
       bitbucket.org/cessda/cessda.cvs.two jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-olive-sparrow.sh
-        container: qc.sty_homey-pumpkin-argentino
+        - /usr/bin/env sh .sqa/script.foggy-chestnut-paradise.sh
+        container: qc.sty_smelly-smalt-dragon
       bitbucket.org/cessda/cessda.cvs.two stylelint:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-chocolate-tetra.sh
-        container: qc.sty_foggy-puce-sheep
+        - /usr/bin/env sh .sqa/script.flabby-denim-dachsbracke.sh
+        container: qc.sty_skanky-taupe-zonkey
   QC.Ver:
     repos:
       bitbucket.org/cessda/cessda.cvs.two get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-scarlet-mule.sh
-        container: qc.ver_skanky-malachite-yak
+        - /usr/bin/env sh .sqa/script.hasty-carmine-terrier.sh
+        container: qc.ver_slaphappy-mauve-coyote
 timeout: 1800
