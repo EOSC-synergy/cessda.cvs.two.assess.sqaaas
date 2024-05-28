@@ -1,56 +1,62 @@
 config:
   credentials: []
   project_repos:
-    bitbucket.org/cessda/cessda.cvs.two:
-      branch: master
-      repo: https://bitbucket.org/cessda/cessda.cvs.two
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.8
+      branch: release/2.0.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/cessda/cessda.cvs.two:
+      branch: main
+      repo: https://github.com/cessda/cessda.cvs.two
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      bitbucket.org/cessda/cessda.cvs.two git:
+      github.com/cessda/cessda.cvs.two git:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-plum-coral.sh
-        container: qc.acc_slimy-lilac-antelope
+        - /usr/bin/env sh .sqa/script.pretty-gamboge-maltese.sh
+        container: qc.acc_shabby-amethyst-flounder
   QC.Doc:
     repos:
-      bitbucket.org/cessda/cessda.cvs.two find_doc_files.py:
+      github.com/cessda/cessda.cvs.two find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-ivory-burmese.sh
-        container: qc.doc_chewy-smalt-toad
-      bitbucket.org/cessda/cessda.cvs.two git:
+        - /usr/bin/env sh .sqa/script.gamy-coral-pig.sh
+        container: qc.doc_tacky-ivory-wolf
+      github.com/cessda/cessda.cvs.two git:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-pear-bracke.sh
-        container: qc.doc_woolly-gold-cockroach
-      bitbucket.org/cessda/cessda.cvs.two markdownlint:
+        - /usr/bin/env sh .sqa/script.ugly-sangria-heron.sh
+        container: qc.doc_sleazy-emerald-impala
+      github.com/cessda/cessda.cvs.two markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-mustard-greyhound.sh
-        container: qc.doc_dorky-beige-rattlesnake
+        - /usr/bin/env sh .sqa/script.lumpy-wisteria-fox.sh
+        container: qc.doc_thirsty-bistre-manatee
   QC.Lic:
     repos:
-      bitbucket.org/cessda/cessda.cvs.two licensee:
+      github.com/cessda/cessda.cvs.two licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-yellow-maltese.sh
-        container: qc.lic_hazy-carmine-greyhound
+        - /usr/bin/env sh .sqa/script.boozy-red-quail.sh
+        container: qc.lic_freaky-white-dachshund
+  QC.Met:
+    repos:
+      github.com/cessda/cessda.cvs.two cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.grumpy-bronze-dogfish.sh
+        container: qc.met_pretty-persimmon-cattle
   QC.Sty:
     repos:
-      bitbucket.org/cessda/cessda.cvs.two checkstyle:
+      github.com/cessda/cessda.cvs.two checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-sapphire-uakari.sh
-        container: qc.sty_paltry-grey-albatross
-      bitbucket.org/cessda/cessda.cvs.two jsonlint:
+        - /usr/bin/env sh .sqa/script.goopy-buff-chinook.sh
+        container: qc.sty_sloppy-pear-monkey
+      github.com/cessda/cessda.cvs.two jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-olivine-woodlouse.sh
-        container: qc.sty_shaky-dandelion-buzzard
+        - /usr/bin/env sh .sqa/script.baggy-periwinkle-fly.sh
+        container: qc.sty_clammy-copper-llama
   QC.Ver:
     repos:
-      bitbucket.org/cessda/cessda.cvs.two get_git_tags.py:
+      github.com/cessda/cessda.cvs.two get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-chocolate-mammoth.sh
-        container: qc.ver_hasty-alizarin-weasel
+        - /usr/bin/env sh .sqa/script.blurry-corn-lobster.sh
+        container: qc.ver_clammy-teal-dugong
 timeout: 5400
